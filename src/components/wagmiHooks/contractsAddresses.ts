@@ -7,15 +7,15 @@ export const contractAddresses: {
     };
 } = {
     mainnet: {
-        namesRegistry: '0xaCeE2CB8Cf92D0d6DC7eB80bEF7dDecf75482819',
+        namesRegistry: '0x636518cb98F2F705082da540ba961E0A608C8220',
         svgRenderer: '0x09BF011Ed8a82a95b2721986082C07f4b074cba0',
-        pomToken: '0x187e3bf7a18cf0dBce3E0B6D2CCc00CE444F61A7',
+        pomToken: '0x9348025499d96e533D367698E62ecCE168d48919',
         storage: '0xCD95e385C2f7Da32675dfD701a32BeB0F1442087',
     },
     sepolia: {
-        namesRegistry: '0xF357fEb9B33Dc568aDc9d5382Ba69FD198832079',
+        namesRegistry: '0x443c7eCE694853c32EECeEabA947Cc92F5625CE0',
         svgRenderer: '0x21DA9d030582A8a59143A9568c24C1c8a7ef6c57',
-        pomToken: '0xF318d982B8E55F9fa238b1392e0B8Ec3197D7080',
+        pomToken: '0x0B95ca1876E68DE9774b143020CFd55Dd29bde7A',
         storage: '0xd94C0C60A25044039472C6407Abb013A82bf85C6',
     },
 };
