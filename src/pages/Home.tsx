@@ -5,21 +5,21 @@ import './../App.css';
 import { useNavigate } from 'react-router-dom';
 
 const Home: React.FC = () => {
-    const { defaultCommunity } = useParams();
+    const { defaultTLN } = useParams();
     const navigate = useNavigate();
     useEffect(() => {
-        if (defaultCommunity && !defaultCommunity.startsWith('@')) {
-            navigate(`/@${defaultCommunity}`);
+        if (defaultTLN && !defaultTLN.startsWith('@')) {
+            navigate(`/@${defaultTLN}`);
         }
-    }, [defaultCommunity, navigate]);
-    const communityValue = defaultCommunity ? defaultCommunity.replace(/^@/, '') : '';
+    }, [defaultTLN, navigate]);
+    const tlnValue = defaultTLN ? defaultTLN.replace(/^@/, '') : '';
 
     return (
         <div className="home-content">
-            <h1>Get your free name in any community now!</h1>
+            <h1>Get your free name now!</h1>
             <div className="home-content-child">
                 {/* Pass the handleInputChange function as a prop to the NameSearch component */}
-                <NameSearch defaultCommunity={communityValue} />
+                <NameSearch defaultTLN={tlnValue} />
             </div>
         </div>
     );

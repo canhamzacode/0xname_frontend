@@ -127,8 +127,8 @@ const CommunitiesSearchBasic: React.FC<CommunitiesSearchBasicProps> = ({
                     <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
                     <FormControl
                         type="text"
-                        placeholder="COMMUNITY"
-                        aria-label="Community search"
+                        placeholder="Type any TLN"
+                        aria-label="TLN search"
                         aria-describedby="basic-addon2"
                         value={searchValue}
                         onChange={handleInputChange}
@@ -145,7 +145,7 @@ const CommunitiesSearchBasic: React.FC<CommunitiesSearchBasicProps> = ({
                 ) : null}
             </div>
             <Form.Text id="TextForm" className="text-center">
-                Type a community name to register. Length should be 3-10 characters.
+                Type a TLN to register. Length should be 3-10 characters.
             </Form.Text>
             <Button
                 variant="dark"

@@ -6,11 +6,11 @@ import PageContent from './components/layoutComponents/Page';
 import Home from './pages/Home';
 import About from './pages/About';
 import Profile from './pages/Profile';
-import CreateCommunity from './pages/CreateCommunity';
-import CreateCommunityFinal from './pages/CreateCommunityFinal';
+import RegisterTLN from './pages/CreateCommunity';
+import RegisterTLNFinal from './pages/CreateCommunityFinal';
 import RegisterNameFinal from './pages/RegisterNameFinal';
-import ManageCommunityFinal from './pages/ManageCommunityFinal';
-import MyCommunities from './pages/MyCommunities';
+import ManageTLNFinal from './pages/ManageCommunityFinal';
+import MyTLNs from './pages/MyCommunities';
 import MyCards from './pages/MyCards';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS here
 import config from './config';
@@ -20,19 +20,14 @@ import MyCustomAvatar from './components/connectKit/MyCustomAvatar';
 import CommunityBase from './pages/CommunityBase';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-type PageKey =
-    | '🗂️ COMMUNITY BASE'
-    | 'MY NAMES'
-    | '🌈 CREATE COMMUNITY'
-    | 'MY COMMUNITIES'
-    | 'ABOUT';
+type PageKey = '🗂️ COMMUNITY BASE' | 'MY NAMES' | '🌈 REGISTER TLN' | 'MY TLNs' | 'ABOUT';
 
 const App: React.FunctionComponent = () => {
     const pages: PageKey[] = [
         '🗂️ COMMUNITY BASE',
         'MY NAMES',
-        '🌈 CREATE COMMUNITY',
-        'MY COMMUNITIES',
+        '🌈 REGISTER TLN',
+        'MY TLNs',
         'ABOUT',
     ];
     const queryClient = new QueryClient();
@@ -61,7 +56,7 @@ const App: React.FunctionComponent = () => {
                                         }
                                     />
                                     <Route
-                                        path="/:defaultCommunity"
+                                        path="/:defaultTLN"
                                         element={
                                             <PageContent>
                                                 {' '}
@@ -70,7 +65,7 @@ const App: React.FunctionComponent = () => {
                                         }
                                     />
                                     <Route
-                                        path="/n/:nameAtCommunity"
+                                        path="/n/:nameAtTLN"
                                         element={
                                             <PageContent>
                                                 {' '}
@@ -97,20 +92,20 @@ const App: React.FunctionComponent = () => {
                                         }
                                     />
                                     <Route
-                                        path="/CreateCommunity"
+                                        path="/RegisterTLN"
                                         element={
                                             <PageContent>
                                                 {' '}
-                                                <CreateCommunity />{' '}
+                                                <RegisterTLN />{' '}
                                             </PageContent>
                                         }
                                     />
                                     <Route
-                                        path="/c/"
+                                        path="/t/"
                                         element={
                                             <PageContent>
                                                 {' '}
-                                                <MyCommunities />{' '}
+                                                <MyTLNs />{' '}
                                             </PageContent>
                                         }
                                     />
@@ -124,25 +119,25 @@ const App: React.FunctionComponent = () => {
                                         }
                                     />
                                     <Route
-                                        path="/CreateCommunityFinal/:searchValue"
+                                        path="/RegisterTLNFinal/:searchValue"
                                         element={
                                             <PageContent>
                                                 {' '}
-                                                <CreateCommunityFinal />{' '}
+                                                <RegisterTLNFinal />{' '}
                                             </PageContent>
                                         }
                                     />
                                     <Route
-                                        path="/CreateCommunityFinal/"
+                                        path="/RegisterTLNFinal/"
                                         element={
                                             <PageContent>
                                                 {' '}
-                                                <CreateCommunityFinal />{' '}
+                                                <RegisterTLNFinal />{' '}
                                             </PageContent>
                                         }
                                     />
                                     <Route
-                                        path="/RegisterNameFinal/:nameAtCommunity"
+                                        path="/RegisterNameFinal/:nameAtTLN"
                                         element={
                                             <PageContent>
                                                 {' '}
@@ -151,11 +146,11 @@ const App: React.FunctionComponent = () => {
                                         }
                                     />
                                     <Route
-                                        path="/c/:searchValueCommunity"
+                                        path="/t/:searchValueTLN"
                                         element={
                                             <PageContent>
                                                 {' '}
-                                                <ManageCommunityFinal />{' '}
+                                                <ManageTLNFinal />{' '}
                                             </PageContent>
                                         }
                                     />

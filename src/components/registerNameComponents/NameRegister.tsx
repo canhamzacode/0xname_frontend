@@ -41,7 +41,7 @@ function checkIfAdmin(isAdminData: string | undefined, userAddress: string | und
     return isAdminData === userAddress ? 'Admin' : 'Basic Member';
 }
 
-function NameRegister({ nameAtCommunity }: { nameAtCommunity: string }) {
+function NameRegister({ nameAtTLN }: { nameAtTLN: string }) {
     const navigate = useNavigate();
     const [feedBackText, setFeedBackText] = useState<string>('');
     const [inputValidity, setInputValidity] = useState<string | null>(null);
@@ -56,7 +56,7 @@ function NameRegister({ nameAtCommunity }: { nameAtCommunity: string }) {
     const [alreadyHasName, setAlreadyHasName] = useState<boolean>(false);
     const [CS, setCS] = useState<ColorScheme>(defaultColorScheme);
 
-    const [nameValue, communityValue] = nameAtCommunity.split('@');
+    const [nameValue, communityValue] = nameAtTLN.split('@');
 
     const [estimateGasUSD, setEstimateGasUSD] = useState<GasData | undefined>(undefined);
     const [gasFetchStatus, setGasFetchStatus] = useState<string>('loading...');
@@ -142,7 +142,7 @@ function NameRegister({ nameAtCommunity }: { nameAtCommunity: string }) {
         //refetch: refetchSVG,  // probably use in a future
         isError: isErrorSVG,
         isLoading: isLoadingSVG,
-    } = RenderSVG([nameAtCommunity, formattedDate, memberRole, communityValue, CS]);
+    } = RenderSVG([nameAtTLN, formattedDate, memberRole, communityValue, CS]);
 
     const {
         write: writeRegName,
@@ -201,7 +201,7 @@ function NameRegister({ nameAtCommunity }: { nameAtCommunity: string }) {
 
     useEffect(() => {
         if (
-            feedBackText === 'Name is available for registration in this community' &&
+            feedBackText === 'Name is available for registration in this TLN (Top Level Name)' &&
             isCheckboxValid() &&
             !isLoadingIsAdmin &&
             address !== undefined &&
@@ -258,7 +258,7 @@ function NameRegister({ nameAtCommunity }: { nameAtCommunity: string }) {
                 <Form.Group className="mb-3" controlId="formNameAtCommunity">
                     <Form.Control
                         type="text"
-                        value={nameAtCommunity}
+                        value={nameAtTLN}
                         disabled
                         isInvalid={inputValidity === 'isInvalid'}
                         isValid={inputValidity === 'isValid'}
@@ -297,7 +297,7 @@ function NameRegister({ nameAtCommunity }: { nameAtCommunity: string }) {
                                 </p>
                                 <p>
                                     {' '}
-                                    <b>Community Admin:</b>{' '}
+                                    <b>TLN Admin:</b>{' '}
                                     {isLoadingIsAdmin || isErrorIsAdmin
                                         ? 'loading...'
                                         : adminAddress}{' '}

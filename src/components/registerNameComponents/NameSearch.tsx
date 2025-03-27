@@ -10,9 +10,9 @@ import { useAccount } from 'wagmi';
 import Toast from 'react-bootstrap/Toast';
 import useInputValidation from '../utils/inputValidationHook';
 
-function NameSearch({ defaultCommunity }: { defaultCommunity: string }) {
+function NameSearch({ defaultTLN }: { defaultTLN: string }) {
     const [nameValue, setNameValue] = useState<string>('');
-    const [communityValue, setCommunityValue] = useState<string>(defaultCommunity ?? '');
+    const [communityValue, setCommunityValue] = useState<string>(defaultTLN ?? '');
     const [buttonStatus, setButtonStatus] = useState<string>('disabled');
     const [recentCommunities, setRecentCommunities] = useState<Community[] | null>(null); //rewrite type
     const [alreadyHasName, setAlreadyHasName] = useState<boolean>(false);
@@ -169,8 +169,8 @@ function NameSearch({ defaultCommunity }: { defaultCommunity: string }) {
                         <Form.Control
                             className="rounded"
                             type="text"
-                            placeholder="COMMUNITY"
-                            aria-label="Community search"
+                            placeholder="TLN (Top Level Name)"
+                            aria-label="TLN search"
                             aria-describedby="basic-addon2"
                             value={communityValue}
                             onChange={handleCommunityInputChange}
@@ -194,8 +194,7 @@ function NameSearch({ defaultCommunity }: { defaultCommunity: string }) {
                     ) : null}
                 </div>
                 <Form.Text id="TextForm" className="text-center">
-                    Type your chosen name and a community name. Name: 3-15, Community: 3-10
-                    characters.
+                    Type your chosen name and a TLN. Name: 3-15, TLN: 3-10 characters.
                 </Form.Text>
                 <Button
                     variant="dark"
@@ -220,7 +219,7 @@ function NameSearch({ defaultCommunity }: { defaultCommunity: string }) {
 
             <div className="rcbt">
                 <div className="rcbt-c1">
-                    <p>{recentCommunities ? 'Most recent communities:' : ''}</p>
+                    <p>{recentCommunities ? 'Most recent TLNs:' : ''}</p>
                 </div>
                 <div className="rcbt-c2">
                     {recentCommunities &&

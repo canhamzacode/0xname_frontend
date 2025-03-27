@@ -4,7 +4,7 @@ import './../App.css';
 
 const CreateCommunity: React.FunctionComponent = () => (
     <div className="cc-content">
-        <h1>Enter the name of community you want to register</h1>
+        <h1>Enter the TLN (Top Level Name) you want to register</h1>
         <div className="cc-content-child">
             <CommunitySearch />
         </div>

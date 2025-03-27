@@ -6,7 +6,7 @@ const ManageCommunityFinal: React.FunctionComponent = () => {
     const communityValue = searchValueCommunity ?? '';
     return (
         <div className="cm-content">
-            <h1>Here you can manage your community</h1>
+            <h1>Here you can manage your TLN (Top Level Name)</h1>
             <div className="cm-content-child">
                 <ManageCommunity searchValue={communityValue} />
             </div>

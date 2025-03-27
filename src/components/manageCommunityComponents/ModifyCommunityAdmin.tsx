@@ -95,7 +95,7 @@ function ModifyCommunityAdmin({
     return (
         <div className="cmcce2">
             <Form.Group className="mb-3 fw" controlId="formAdminAddress">
-                <Form.Label>Community Admin Address</Form.Label>
+                <Form.Label>TLN Admin Address</Form.Label>
                 <Form.Control
                     type="text"
                     placeholder="Enter Ethereum Address"

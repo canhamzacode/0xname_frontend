@@ -10,7 +10,7 @@ const chains_to_use = env === 'mainnet' ? mainnet : env === 'sepolia' ? sepolia 
 const transport = import.meta.env.VITE_APP_TRANSPORT;
 export const config = createConfig(
     getDefaultConfig({
-        appName: 'POM',
+        appName: '0xNAME',
         walletConnectProjectId,
         chains: [chains_to_use],
         transports: {

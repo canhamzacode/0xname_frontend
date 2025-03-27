@@ -33,7 +33,7 @@ const columns = [
     },
 
     columnHelper.accessor('pom_community_handle', {
-        header: 'Community Handle',
+        header: 'Top Level Name',
         Cell: ({ cell }: { cell: MRT_Cell<Community, string> }) => (
             <a href={'@' + cell.getValue()} target="_blank" rel="noopener noreferrer">
                 {'@' + cell.getValue()}
@@ -100,7 +100,7 @@ const columns = [
     },
     {
         accessorKey: 'members_count',
-        header: 'Proved Members',
+        header: '0xNAME Elite',
     },
 ];
 

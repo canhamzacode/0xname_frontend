@@ -14,7 +14,7 @@ const CreateCommunityFinal: React.FunctionComponent = () => {
 
     return (
         <div className="cc-content">
-            <h1>Finalise your community creation</h1>
+            <h1>Finalise your TLN (Top Level Name) registration</h1>
             <div className="cc-content-child">
                 {searchValue && <CommunityRegister searchValue={searchValue} />}
             </div>

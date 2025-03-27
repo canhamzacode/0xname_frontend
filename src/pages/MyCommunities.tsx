@@ -3,7 +3,7 @@ import MyCommunitiesSearch from '../components/manageCommunityComponents/MyCommu
 
 const MyCommunities: React.FunctionComponent = () => (
     <div className="cm-content">
-        <h1>Enter the name of community you want to manage</h1>
+        <h1>Enter the TLN (Top Level Name) you want to manage</h1>
         <div className="cm-content-child">
             <MyCommunitiesSearch />
         </div>

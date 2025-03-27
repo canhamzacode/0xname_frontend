@@ -19,11 +19,11 @@ function checkCommunity(textData: string) {
     let validity;
     let buttonStatus;
     if (textData === NULLADDR) {
-        feedback = 'Community is Available';
+        feedback = 'TLN (Top Level Name) is Available';
         validity = 'isValid';
         buttonStatus = '';
     } else {
-        feedback = 'Community is already Registered!';
+        feedback = 'TLN (Top Level Name) is already Registered!';
         validity = 'isInvalid';
         buttonStatus = 'disabled';
     }
@@ -101,7 +101,7 @@ function CommunityRegister({ searchValue }: { searchValue: string }) {
 
     useEffect(() => {
         if (
-            feedBackText === 'Community is Available' &&
+            feedBackText === 'TLN (Top Level Name) is Available' &&
             isAddressValid() &&
             isCheckboxValid() &&
             !isLoadingCommunityRegister &&
@@ -200,7 +200,7 @@ function CommunityRegister({ searchValue }: { searchValue: string }) {
         <div className="hcc2">
             <Form>
                 <Form.Group className="mb-3" controlId="formCommunityName">
-                    <Form.Label>Community Name</Form.Label>
+                    <Form.Label>TLN (Top Level Name)</Form.Label>
                     <Form.Control
                         type="text"
                         value={searchValue}
@@ -213,7 +213,7 @@ function CommunityRegister({ searchValue }: { searchValue: string }) {
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formAdminAddress">
-                    <Form.Label>Community Admin Address</Form.Label>
+                    <Form.Label>TLN Admin Address</Form.Label>
                     <Form.Control
                         type="text"
                         placeholder="Enter Ethereum Address"
@@ -229,7 +229,8 @@ function CommunityRegister({ searchValue }: { searchValue: string }) {
                         <Alert key={variant} variant={variant}>
                             <div>
                                 <p>
-                                    Memberships issuance is <b>FREE</b> for everyone <b>forever</b>!
+                                    TLN (Top Level Name) registration is <b>FREE</b> for everyone{' '}
+                                    <b>forever</b>!
                                 </p>
                                 <p>
                                     <b>⛽️ Gas:</b>{' '}
@@ -249,7 +250,7 @@ function CommunityRegister({ searchValue }: { searchValue: string }) {
                                     )}
                                 </p>
                                 <p>
-                                    Membership Cards have initial color scheme designed by{' '}
+                                    0xNAME images have initial color scheme designed by{' '}
                                     <a
                                         href={`https://beastdao.org`}
                                         target="_blank"
@@ -260,8 +261,8 @@ function CommunityRegister({ searchValue }: { searchValue: string }) {
                                     .
                                 </p>
                                 <p>
-                                    Cards could be customized with your color scheme on{' '}
-                                    <a href={`/MyCommunities`}>MY COMMUNITIES</a>
+                                    Images could be customized with your color scheme on{' '}
+                                    <a href={`/t`}>MY TLNs</a>
                                 </p>
                             </div>
                         </Alert>
