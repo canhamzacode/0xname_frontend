@@ -2,8 +2,8 @@ import { useParams } from 'react-router-dom';
 import ManageCommunity from '../components/manageCommunityComponents/ManageCommunity';
 
 const ManageCommunityFinal: React.FunctionComponent = () => {
-    const { searchValueCommunity } = useParams();
-    const communityValue = searchValueCommunity ?? '';
+    const { searchValueTLN } = useParams();
+    const communityValue = searchValueTLN ?? '';
     return (
         <div className="cm-content">
             <h1>Here you can manage your TLN (Top Level Name)</h1>
