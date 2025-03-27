@@ -9,8 +9,8 @@ import { Link } from 'react-router-dom';
 const pagePaths = {
     '🗂️ COMMUNITY BASE': '/communitybase',
     'MY NAMES': '/n/',
-    '🌈 CREATE COMMUNITY': '/createcommunity',
-    'MY COMMUNITIES': '/c/',
+    '🌈 REGISTER TLN': '/registertln',
+    'MY TLNs': '/t/',
     ABOUT: '/about',
 };
 

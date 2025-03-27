@@ -5,9 +5,9 @@ const CommunitySearch: React.FC = () => {
     return (
         <CommunitiesSearchBasic
             comparisonData="0x0000000000000000000000000000000000000000"
-            feedBackTextValid="Community is available!"
-            feedbackTextInvalid="Community is already Registred!"
-            routePath="CreateCommunityFinal"
+            feedBackTextValid="TLN (Top Level Name) is available!"
+            feedbackTextInvalid="TLN (Top Level Name) is already Registred!"
+            routePath="RegisterTLNFinal"
         />
     );
 };

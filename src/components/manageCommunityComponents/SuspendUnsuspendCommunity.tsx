@@ -133,7 +133,7 @@ function SuspendUnsuspendCommunity({
                 disabled={buttonStatusSuspend() === 'disabled'}
                 onClick={handleSuspendCommunityClick}
             >
-                Suspend Community as Admin
+                Suspend TLN as Admin
             </Button>
 
             {isSuspendButtonClicked && (
@@ -158,7 +158,7 @@ function SuspendUnsuspendCommunity({
                 disabled={buttonStatusUnSuspend() === 'disabled'}
                 onClick={handleUnSuspendCommunityClick}
             >
-                Unsuspend Community as Admin
+                Unsuspend TLN as Admin
             </Button>
 
             {isUnSuspendButtonClicked && (

@@ -45,8 +45,8 @@ function MyMemberships() {
         }
     };
 
-    const handleShareButtonClick = (nameAtCommunity: string) => {
-        navigate(`/n/${nameAtCommunity}`);
+    const handleShareButtonClick = (nameAtTLN: string) => {
+        navigate(`/n/${nameAtTLN}`);
     };
 
     return (
@@ -57,13 +57,13 @@ function MyMemberships() {
                         <object
                             data={item.metadata.image}
                             type="image/svg+xml"
-                            aria-label="PoM card Image"
+                            aria-label="0xNAME Image"
                         >
                             {/* If data is unavailable, you can provide a placeholder image */}
                             <img src="placeholder.png" alt="Placeholder" />
                         </object>
                         <Card.Body className="mcCard-body">
-                            <DeleteName nameAtCommunity={item.metadata.name} />
+                            <DeleteName nameAtTLN={item.metadata.name} />
                             <Button
                                 id="noscale"
                                 variant="dark"

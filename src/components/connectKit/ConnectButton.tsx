@@ -56,16 +56,14 @@ export const ConnectButton = () => {
             ? membershipData.name + '@' + membershipData.community
             : null;
 
-    //pom eth name is the second option after ens name
+    //0xNAME at eth is the primary option
     return (
         <div className="connectKitBtn">
             <ConnectKitButton.Custom>
-                {({ isConnected, truncatedAddress, show, ensName }) => {
+                {({ isConnected, truncatedAddress, show }) => {
                     return (
                         <StyledButton onClick={show}>
-                            {isConnected
-                                ? (ensName ?? pomEthName ?? truncatedAddress)
-                                : 'Connect Wallet'}{' '}
+                            {isConnected ? (pomEthName ?? truncatedAddress) : 'Connect Wallet'}{' '}
                             {/* Use the constant ENS name */}
                         </StyledButton>
                     );

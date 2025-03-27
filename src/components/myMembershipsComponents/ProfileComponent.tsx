@@ -9,21 +9,21 @@ function decodeString(stringValue: string): string {
     return atob(stringValue.split(',')[1]);
 }
 
-const ProfileComponent: React.FC<{ nameAtCommunity: string }> = ({ nameAtCommunity }) => {
+const ProfileComponent: React.FC<{ nameAtTLN: string }> = ({ nameAtTLN }) => {
     const {
         data: profileJsonData,
         // refetch: profileJsonRefetch, // probably use in a future
         isError: profileJsonIsError,
         isLoading: profileJsonIsLoading,
         error: profileJsonError,
-    } = GetTokenJsonData(nameAtCommunity);
+    } = GetTokenJsonData(nameAtTLN);
 
     const decodedProfileJsonData: string = profileJsonData ? decodeString(profileJsonData) : '';
 
-    const parts = nameAtCommunity.split('@');
+    const parts = nameAtTLN.split('@');
     const communityValue = parts[parts.length - 1];
-    const pageTitle = nameAtCommunity;
-    const pageDescription = `Proof Of Membership in ${communityValue}`;
+    const pageTitle = nameAtTLN;
+    const pageDescription = `0xNAME at ${communityValue}`;
 
     const openMetadataInNewTab = (metadata: string) => {
         const blob = new Blob([metadata], { type: 'application/json' });
@@ -62,7 +62,7 @@ const ProfileComponent: React.FC<{ nameAtCommunity: string }> = ({ nameAtCommuni
                         <object
                             data={JSON.parse(decodedProfileJsonData).image}
                             type="image/svg+xml"
-                            aria-label="PoM card Image"
+                            aria-label="0xNAME Image"
                         >
                             <img src="placeholder.png" alt="Placeholder" />
                         </object>

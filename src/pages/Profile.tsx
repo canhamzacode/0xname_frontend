@@ -3,16 +3,16 @@ import { useParams } from 'react-router-dom';
 import ProfileComponent from '../components/myMembershipsComponents/ProfileComponent';
 
 const Profile: React.FC = () => {
-    const { nameAtCommunity } = useParams();
-    const name = nameAtCommunity ?? '';
+    const { nameAtTLN } = useParams();
+    const name = nameAtTLN ?? '';
     return (
         <div className="page-content">
             <h1>
                 {' '}
-                <b> {nameAtCommunity} </b>{' '}
+                <b> {nameAtTLN} </b>{' '}
             </h1>
             <div className="pc">
-                <ProfileComponent nameAtCommunity={name} />
+                <ProfileComponent nameAtTLN={name} />
             </div>
         </div>
     );

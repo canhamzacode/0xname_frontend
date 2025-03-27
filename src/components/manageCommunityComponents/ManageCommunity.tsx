@@ -131,7 +131,7 @@ function ManageCommunity({ searchValue }: { searchValue: string }) {
         <div className="cmcc2">
             <Form>
                 <Form.Group className="mb-3" controlId="formCommunityName">
-                    <Form.Label>Community Name</Form.Label>
+                    <Form.Label>TLN (Top Level Name)</Form.Label>
                     <Form.Control
                         type="text"
                         value={searchValue}
@@ -148,7 +148,7 @@ function ManageCommunity({ searchValue }: { searchValue: string }) {
                             <div>
                                 <p>
                                     {' '}
-                                    Membership cards issued:{' '}
+                                    0xNAMEs issued:{' '}
                                     <b>
                                         {' '}
                                         {isLoadingMembershipsCount || isErrorMembershipsCount
@@ -158,7 +158,7 @@ function ManageCommunity({ searchValue }: { searchValue: string }) {
                                 </p>
                                 <p>
                                     {' '}
-                                    Is community suspended by Admin:{' '}
+                                    Is TLN suspended by Admin:{' '}
                                     <b>
                                         {isLoadingIsSuspendedByAdmin || isErrorIsSuspendedByAdmin
                                             ? 'loading...'
@@ -167,7 +167,7 @@ function ManageCommunity({ searchValue }: { searchValue: string }) {
                                 </p>
                                 <p>
                                     {' '}
-                                    Is community verified:{' '}
+                                    Is TLN verified:{' '}
                                     <b>
                                         {isLoadingIsCommunityVerified || isErrorIsCommunityVerified
                                             ? 'loading...'

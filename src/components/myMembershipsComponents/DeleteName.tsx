@@ -5,11 +5,11 @@ import { useNavigate } from 'react-router-dom';
 import TxStatusModalReceipt from '../txStatusModalComponents/TxStatusModalReceipt';
 
 interface DeleteNameProps {
-    nameAtCommunity: string;
+    nameAtTLN: string;
 }
 
-const DeleteName: React.FC<DeleteNameProps> = ({ nameAtCommunity }) => {
-    const [name, community] = nameAtCommunity.split('@');
+const DeleteName: React.FC<DeleteNameProps> = ({ nameAtTLN }) => {
+    const [name, community] = nameAtTLN.split('@');
     const [showModalDelete, setShowModalDelete] = useState(false);
     const [deleteClicked, setDeleteClicked] = useState(false);
     const [errorCount, setErrorCount] = useState<number>(0);

@@ -1,6 +1,6 @@
 {
-    "short_name": "PoM dApp",
-    "name": "Proof of Membership system",
+    "short_name": "0xNAME dApp",
+    "name": "0xNAME platform",
     "icons": [
         {
             "src": "favicon.ico",
@@ -20,6 +20,6 @@
     ],
     "start_url": ".",
     "display": "standalone",
-    "theme_color": "#AC80F3",
-    "background_color": "#FFFFFF"
+    "theme_color": "#191516",
+    "background_color": "#F8F8F8"
 }
