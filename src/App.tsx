@@ -19,10 +19,16 @@ import { ConnectKitProvider } from 'connectkit';
 import MyCustomAvatar from './components/connectKit/MyCustomAvatar';
 import CommunityBase from './pages/CommunityBase';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { useLoadFrames } from './hooks';
 
 type PageKey = '🗂️ COMMUNITY BASE' | 'MY NAMES' | '🌈 REGISTER TLN' | 'MY TLNs' | 'ABOUT';
 
 const App: React.FunctionComponent = () => {
+    const { isSDKLoaded } = useLoadFrames();
+
+    if (!isSDKLoaded) {
+        return <div>Loading...</div>;
+    }
     const pages: PageKey[] = [
         '🗂️ COMMUNITY BASE',
         'MY NAMES',
