@@ -10,6 +10,9 @@
 
 Please read this [guide](./src/community_base/add-community.md).
 
+### Want to learn more about 0xNAME?
+Here are some of the frequently asked questions about 0xNAMEs: [0xNAME FAQs](https://github.com/beastdao/0xname_frontend/blob/main/FAQ.md)
+
 ---
 
 ### Contributors to pom_frontend
