@@ -38,7 +38,10 @@ const TxStatusModalBasic: React.FC<ModalContentProps> = ({
                 <Modal.Body>
                     {isPending ? (
                         <>
-                            <p>Waiting for transaction confirmation. Pending...</p>
+                            <p>
+                                Waiting for transaction confirmation. Please go to your wallet and
+                                confirm the transaction.
+                            </p>
                             <Spinner animation="border" variant="secondary" />
                         </>
                     ) : isTxError && errorCount <= 5 ? (
