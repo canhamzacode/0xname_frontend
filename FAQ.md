@@ -24,6 +24,7 @@ It is issued in a digital form as a Soulbound (non-transferable) Token to a wall
 - vote and much more.
   
 
+
 Advantages of 0xNAMEs:
 
 - 0xNAMEs are built for people by people (BEAST DAO is a decentralised cooperative building public goods in the Web3 space).
@@ -106,17 +107,20 @@ Using a 0xNAME instead of a long address to receive anything crypto.
 *Currently 0xNAMEs resolving functionality needed to receive anything crypto to the name instead of the address is available with MetaMask.
 To use it, please install the 0xNAME Resolver Snap via the MetaMask Snap Directory: [https://snaps.metamask.io/snap/npm/0xname-resolver-snap/](https://snaps.metamask.io/snap/npm/0xname-resolver-snap/).
 
+
 *- Digital identification:*
 
 Various unique names are part of your digital identity.
 
 You can have multiple 0xNAMEs with various Top Level Names (TLNs) like @eth, @ethereum, @beast, @metamask, @gitcoin, @ethdevs and so on to showcase your involvement with some project, DAO or community.
 
+
 *- Access to services or exclusive privileges:*
 
 With 0xNAME tokens, you may gain access to various token-gated services or activities and perks provided by some community/project.
 
 For example, people with any 0xNAME can get access to the [Ethereum Sepolia Faucet](https://faucet.0xname.foo/) empowered by 0xNAME and claim some testnet Sepolia ETH. The other example is that BEAST DAO members, holding 0xNAME@beast are eligible to vote on various internal decisions and so on.
+
 
 *- Communications:*
 
