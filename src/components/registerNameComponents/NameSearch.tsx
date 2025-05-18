@@ -19,6 +19,7 @@ function NameSearch({ defaultTLN }: { defaultTLN: string }) {
     const navigate = useNavigate();
     const { address } = useAccount();
 
+    console.log(communityValue);
     const {
         data: dataCommunity,
         refetch: refetchCommunity,
@@ -142,7 +143,7 @@ function NameSearch({ defaultTLN }: { defaultTLN: string }) {
         <>
             <div className="hcc1">
                 <div className="hcc1-if">
-                    <InputGroup className="mb-3" size="lg">
+                    <InputGroup className="md:mb-3" size="lg">
                         <Form.Control
                             className="rounded"
                             type="text"
@@ -163,9 +164,9 @@ function NameSearch({ defaultTLN }: { defaultTLN: string }) {
                     </InputGroup>
                 </div>
 
+                <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
                 <div className="hcc1-if">
                     <InputGroup className="mb-3" size="lg">
-                        <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
                         <Form.Control
                             className="rounded"
                             type="text"
