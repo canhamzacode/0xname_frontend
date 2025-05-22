@@ -33,4 +33,4 @@ After making changes, you need to  run linter `bun run lint` and format the code
 ### Repo Activity
 ---
 
-![Alt](https://repobeats.axiom.co/api/embed/f1730062d4806479d6f01af48786b7d566769924.svg "Repobeats analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/ab1eecb79887a1cca2f9efc636d15a1347b3c82c.svg "Repobeats analytics image")
