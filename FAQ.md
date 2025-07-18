@@ -71,6 +71,85 @@ We stand for that and make 0xNAMEs available as a free public good.
 
 ---
 
+### What is TLN?
+
+TLN stands for Top Level Name. In simple words it's a custom ending of your human-readable name on the blockchain. It could be literraly anything: TLN could be associated with a project, DAO, community, initiatibe, event and even your family name.
+Just choose one to personalise your 0xNAME, while regestering it.
+
+---
+
+### What TLN can I use for my 0xNAME?
+
+As we said you could use pretty much any TLN, the prerequisites are that a TLN is already regestered via the [app.0xname.foo](https://app.0xname.foo) and the manager of this TLN hasn't paused registrations. See the currently available list of TLNs below.
+If a TLN of your choice isn't registered yet (i.e. you see a feedback "TLN is not registered. "Register a TLN" ->"), you can seamlessly register it via [🌈 REGISTER TLN](https://app.0xname.foo/registertln)
+
+TLN list:
+@womenpower,
+@donut,
+@dezen,
+@btc,
+@holyheld,
+@gnosispay,
+@bleap,
+@deblock,
+@blockchain,
+@nbx,
+@ecstashe,
+@thrilld,
+@tdn,
+@cgc,
+@web3women,
+@collegedao,
+@h.e.r.dao,
+@beastpro,
+@web3pro,
+@ethcc,
+@rmr,
+@optimism,
+@gravity,
+@nouns,
+@rollup,
+@mantle,
+@address,
+@zkp,
+@cex,
+@sandbox,
+@guild,
+@defi,
+@meme,
+@dex,
+@web3,
+@chain4good,
+@wallet,
+@ryassir,
+@farcaster,
+@airdrop,
+@ycaps,
+@sptlgt,
+@gnosis,
+@crypto,
+@ethdevs,
+@sepolia,
+@developers,
+@devconnect,
+@mtg,
+@circle,
+@0xname,
+@ethzurich,
+@owlracle,
+@gitcoin,
+@wanticonic,
+@safe,
+@opensea,
+@metamask,
+@etherscan,
+@devcon,
+@dao,
+@eth,
+@ethereum
+
+---
+
 ### Do I need a cryptocurrency wallet to GET 0xNAME?
 
 Yes, to record your 0xNAME on the blockchain and to issue the Soulbound Token, it is needed to have an Ethereum wallet address. You can obtain one with a wallet of your choice.
