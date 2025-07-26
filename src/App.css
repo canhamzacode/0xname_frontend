@@ -213,33 +213,69 @@ body,
 .rcbt {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    margin: 5svh;
+    margin: 4vh 0;
+    gap: 20px;
 }
 
 .rcbt-c1 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 25%;
-}
-
-.rcbt-c1 p {
-    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .rcbt-c2 {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+    justify-items: center;
+    width: 100%;
+    max-width: 700px;
 }
 
-.rcbt-c2 button {
-    margin-left: 3vw;
-    transform: scale(0.9);
+.tln-badge {
+    padding: 6px 14px;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
 }
+
+.tln-badge:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* Random color classes */
+.color-0 {
+    background-color: #f94144;
+} /* red */
+.color-1 {
+    background-color: #f3722c;
+} /* orange */
+.color-2 {
+    background-color: #f9c74f;
+} /* yellow */
+.color-3 {
+    background-color: #90be6d;
+} /* green */
+.color-4 {
+    background-color: #43aa8b;
+} /* teal */
+.color-5 {
+    background-color: #577590;
+} /* blue */
 
 /* 2nd registration page */
 .form-check-input:checked {

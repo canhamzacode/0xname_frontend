@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { NamesRegistryReadHook } from '../wagmiHooks/NamesRegistryReadHook';
-import { Community, FetchRecentCommunities } from '../apiBackendComponents/FetchRecentCommunities';
+import { FetchRecentCommunities } from '../apiBackendComponents/FetchRecentCommunities';
 import Spinner from 'react-bootstrap/Spinner';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom';
@@ -14,7 +14,7 @@ function NameSearch({ defaultTLN }: { defaultTLN: string }) {
     const [nameValue, setNameValue] = useState<string>('');
     const [communityValue, setCommunityValue] = useState<string>(defaultTLN ?? '');
     const [buttonStatus, setButtonStatus] = useState<string>('disabled');
-    const [recentCommunities, setRecentCommunities] = useState<Community[] | null>(null); //rewrite type
+    const [recentCommunities, setRecentCommunities] = useState<string[] | null>(null); //rewrite type
     const [alreadyHasName, setAlreadyHasName] = useState<boolean>(false);
     const navigate = useNavigate();
     const { address } = useAccount();
@@ -220,18 +220,18 @@ function NameSearch({ defaultTLN }: { defaultTLN: string }) {
 
             <div className="rcbt">
                 <div className="rcbt-c1">
-                    <p>{recentCommunities ? 'Most recent TLNs:' : ''}</p>
+                    <p>{recentCommunities ? 'Available Top Level Names:' : ''}</p>
                 </div>
                 <div className="rcbt-c2">
                     {recentCommunities &&
                         recentCommunities.map((community, index) => (
-                            <Button
-                                variant="outline-dark"
+                            <span
                                 key={index}
+                                className={`tln-badge color-${index % 6}`}
                                 onClick={() => handleCommunitySelect(community.toString())}
                             >
-                                @{community.toString()}
-                            </Button>
+                                {community.toString()}
+                            </span>
                         ))}
                 </div>
             </div>
