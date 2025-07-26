@@ -1,4 +1,4 @@
-# pom_frontend
+# 0xname - frontend
 
 <a href="https://discord.gg/McqF7vyCWx"><img alt="Discord" src="https://img.shields.io/discord/1071459720554098788?style=plastic&label=Join%20Discord&labelColor=%23000000&color=%23AC80F3"></a>
 &nbsp;
@@ -9,6 +9,9 @@
 ### Want to add a new community to Community Base?
 
 Please read this [guide](./src/community_base/add-community.md).
+
+### Want to learn more about 0xNAME?
+Here are some of the frequently asked questions about 0xNAMEs: [0xNAME FAQs](https://github.com/beastdao/0xname_frontend/blob/main/FAQ.md)
 
 ---
 
@@ -30,4 +33,4 @@ After making changes, you need to  run linter `bun run lint` and format the code
 ### Repo Activity
 ---
 
-![Alt](https://repobeats.axiom.co/api/embed/f1730062d4806479d6f01af48786b7d566769924.svg "Repobeats analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/ab1eecb79887a1cca2f9efc636d15a1347b3c82c.svg "Repobeats analytics image")
