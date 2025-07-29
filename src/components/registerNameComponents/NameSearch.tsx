@@ -227,9 +227,10 @@ function NameSearch({ defaultTLN }: { defaultTLN: string }) {
                         recentCommunities.map((community, index) => (
                             <span
                                 key={index}
-                                className={`tln-badge color-${index % 6}`}
+                                className={`tln-badge color-${index}`}
                                 onClick={() => handleCommunitySelect(community.toString())}
                             >
+                                <div className="dot"></div>
                                 {community.toString()}
                             </span>
                         ))}

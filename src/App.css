@@ -231,7 +231,9 @@ body,
     gap: 12px;
     justify-items: center;
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
+    background: #fff;
+    padding: 30px;
 }
 
 .tln-badge {
@@ -257,25 +259,86 @@ body,
     opacity: 0.9;
 }
 
-/* Random color classes */
 .color-0 {
-    background-color: #f94144;
-} /* red */
+    background-color: #f3f5f7;
+    color: #9ba0af;
+}
 .color-1 {
-    background-color: #f3722c;
-} /* orange */
+    background-color: #fee2e0;
+    color: #fb2c35;
+}
 .color-2 {
-    background-color: #f9c74f;
-} /* yellow */
+    background-color: #fef8c3;
+    color: #efb301;
+}
 .color-3 {
-    background-color: #90be6d;
-} /* green */
+    background-color: #dcfde7;
+    color: #02c951;
+}
 .color-4 {
-    background-color: #43aa8b;
-} /* teal */
+    background-color: #dbe8ff;
+    color: #2b7fff;
+}
 .color-5 {
-    background-color: #577590;
-} /* blue */
+    background-color: #e0e7ff;
+    color: #615fff;
+}
+.color-6 {
+    background-color: #f3e8ff;
+    color: #ac47ff;
+}
+.color-7 {
+    background-color: #fbe6f2;
+    color: #f5359b;
+}
+
+.color-8 {
+    background-color: #e6fff2;
+    color: #00a86b;
+}
+
+.color-9 {
+    background-color: #fff0e6;
+    color: #ff6600;
+}
+
+.tln-badge .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    margin-right: 3px;
+}
+
+.color-0 .dot {
+    background-color: #9ba0af;
+}
+.color-1 .dot {
+    background-color: #fb2c35;
+}
+.color-2 .dot {
+    background-color: #efb301;
+}
+.color-3 .dot {
+    background-color: #02c951;
+}
+.color-4 .dot {
+    background-color: #2b7fff;
+}
+.color-5 .dot {
+    background-color: #615fff;
+}
+.color-6 .dot {
+    background-color: #ac47ff;
+}
+.color-7 .dot {
+    background-color: #f5359b;
+}
+.color-8 .dot {
+    background-color: #00a86b;
+}
+.color-9 .dot {
+    background-color: #ff6600;
+}
 
 /* 2nd registration page */
 .form-check-input:checked {
