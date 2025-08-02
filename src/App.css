@@ -231,9 +231,7 @@ body,
     gap: 12px;
     justify-items: center;
     width: 100%;
-    max-width: 800px;
-    background: #fff;
-    padding: 30px;
+    max-width: 700px;
 }
 
 .tln-badge {
@@ -260,23 +258,23 @@ body,
 }
 
 .color-0 {
-    background-color: #f3f5f7;
-    color: #9ba0af;
+    background-color: #e0f7fa;
+    color: #00bcd4 !important;
 }
 .color-1 {
-    background-color: #fee2e0;
-    color: #fb2c35;
+    background-color: #ffe2e2;
+    color: #fb2c36;
 }
 .color-2 {
-    background-color: #fef8c3;
-    color: #efb301;
+    background-color: #fef9c2;
+    color: #f0b100;
 }
 .color-3 {
     background-color: #dcfde7;
-    color: #02c951;
+    color: #00c950;
 }
 .color-4 {
-    background-color: #dbe8ff;
+    background-color: #dbeafe;
     color: #2b7fff;
 }
 .color-5 {
@@ -285,21 +283,21 @@ body,
 }
 .color-6 {
     background-color: #f3e8ff;
-    color: #ac47ff;
+    color: #ad46ff;
 }
 .color-7 {
-    background-color: #fbe6f2;
-    color: #f5359b;
+    background-color: #fce7f3;
+    color: #f6339a;
 }
 
 .color-8 {
-    background-color: #e6fff2;
-    color: #00a86b;
+    background-color: #ede7f6;
+    color: #673ab7;
 }
 
 .color-9 {
-    background-color: #fff0e6;
-    color: #ff6600;
+    background-color: #fff3e0;
+    color: #ff9800;
 }
 
 .tln-badge .dot {
@@ -310,16 +308,16 @@ body,
 }
 
 .color-0 .dot {
-    background-color: #9ba0af;
+    background-color: #00bcd4;
 }
 .color-1 .dot {
-    background-color: #fb2c35;
+    background-color: #fb2c36;
 }
 .color-2 .dot {
-    background-color: #efb301;
+    background-color: #f0b100;
 }
 .color-3 .dot {
-    background-color: #02c951;
+    background-color: #00c950;
 }
 .color-4 .dot {
     background-color: #2b7fff;
@@ -328,16 +326,16 @@ body,
     background-color: #615fff;
 }
 .color-6 .dot {
-    background-color: #ac47ff;
+    background-color: #ad46ff;
 }
 .color-7 .dot {
-    background-color: #f5359b;
+    background-color: #f6339a;
 }
 .color-8 .dot {
-    background-color: #00a86b;
+    background-color: #673ab7;
 }
 .color-9 .dot {
-    background-color: #ff6600;
+    background-color: #ff9800;
 }
 
 /* 2nd registration page */
