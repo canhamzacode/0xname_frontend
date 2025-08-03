@@ -215,8 +215,8 @@ body,
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 4vh 0;
-    gap: 20px;
+    margin: 0vh 0;
+    gap: 5px;
 }
 
 .rcbt-c1 {
