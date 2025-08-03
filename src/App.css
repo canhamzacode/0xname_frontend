@@ -213,32 +213,129 @@ body,
 .rcbt {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    margin: 5svh;
+    margin: 4vh 0;
+    gap: 20px;
 }
 
 .rcbt-c1 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 25%;
-}
-
-.rcbt-c1 p {
-    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .rcbt-c2 {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+    justify-items: center;
+    width: 100%;
+    max-width: 700px;
 }
 
-.rcbt-c2 button {
-    margin-left: 3vw;
-    transform: scale(0.9);
+.tln-badge {
+    padding: 6px 14px;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.tln-badge:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.color-0 {
+    background-color: #e0f7fa;
+    color: #00bcd4 !important;
+}
+.color-1 {
+    background-color: #ffe2e2;
+    color: #fb2c36;
+}
+.color-2 {
+    background-color: #fef9c2;
+    color: #f0b100;
+}
+.color-3 {
+    background-color: #dcfde7;
+    color: #00c950;
+}
+.color-4 {
+    background-color: #dbeafe;
+    color: #2b7fff;
+}
+.color-5 {
+    background-color: #e0e7ff;
+    color: #615fff;
+}
+.color-6 {
+    background-color: #f3e8ff;
+    color: #ad46ff;
+}
+.color-7 {
+    background-color: #fce7f3;
+    color: #f6339a;
+}
+
+.color-8 {
+    background-color: #ede7f6;
+    color: #673ab7;
+}
+
+.color-9 {
+    background-color: #fff3e0;
+    color: #ff9800;
+}
+
+.tln-badge .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    margin-right: 3px;
+}
+
+.color-0 .dot {
+    background-color: #00bcd4;
+}
+.color-1 .dot {
+    background-color: #fb2c36;
+}
+.color-2 .dot {
+    background-color: #f0b100;
+}
+.color-3 .dot {
+    background-color: #00c950;
+}
+.color-4 .dot {
+    background-color: #2b7fff;
+}
+.color-5 .dot {
+    background-color: #615fff;
+}
+.color-6 .dot {
+    background-color: #ad46ff;
+}
+.color-7 .dot {
+    background-color: #f6339a;
+}
+.color-8 .dot {
+    background-color: #673ab7;
+}
+.color-9 .dot {
+    background-color: #ff9800;
 }
 
 /* 2nd registration page */
