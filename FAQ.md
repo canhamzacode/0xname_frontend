@@ -73,14 +73,14 @@ We stand for that and make 0xNAMEs available as a free public good.
 
 ### What is TLN?
 
-TLN stands for Top Level Name. In simple words it's a custom ending of your human-readable name on the blockchain. It could be literraly anything: TLN could be associated with a project, DAO, community, initiatibe, event and even your family name.
-Just choose one to personalise your 0xNAME, while regestering it.
+TLN stands for Top Level Name. In simple words it's a custom ending of your human-readable name on the blockchain. It could be literally anything: TLN could be associated with a project, DAO, community, initiative, event and even your family name.
+Just choose one to personalise your 0xNAME, while registering it.
 
 ---
 
 ### What TLN can I use for my 0xNAME?
 
-As we said you could use pretty much any TLN, the prerequisites are that a TLN is already regestered via the [app.0xname.foo](https://app.0xname.foo) and the manager of this TLN hasn't paused registrations. See the currently available list of TLNs below.
+As we said you could use pretty much any TLN, the prerequisites are that a TLN is already registered via the [app.0xname.foo](https://app.0xname.foo) and the manager of this TLN hasn't paused registrations. See the currently available list of TLNs below.
 If a TLN of your choice isn't registered yet (i.e. you see a feedback "TLN is not registered. "Register a TLN" ->"), you can seamlessly register it via [🌈 REGISTER TLN](https://app.0xname.foo/registertln)
 
 TLN list:
@@ -88,7 +88,7 @@ TLN list:
 [@donut](https://app.0xname.foo/@donut),
 [@dezen](https://app.0xname.foo/@dezen),
 [@btc](https://app.0xname.foo/@btc),
-[@holyheld]](https://app.0xname.foo/@holyheld),
+[@holyheld](https://app.0xname.foo/@holyheld),
 [@gnosispay](https://app.0xname.foo/@gnosispay),
 [@bleap](https://app.0xname.foo/@bleap),
 [@deblock](https://app.0xname.foo/@deblock),
