@@ -2,7 +2,7 @@
 
 <a href="https://discord.gg/McqF7vyCWx"><img alt="Discord" src="https://img.shields.io/discord/1071459720554098788?style=plastic&label=Join%20Discord&labelColor=%23000000&color=%23AC80F3"></a>
 &nbsp;
-<a href="https://x.com/0xname_foo"><img alt="X (formerly Twitter) Follow" src="https://img.shields.io/twitter/follow/pomcards?style=plastic&labelColor=%23AC80F3&color=%23000000"></a>
+<a href="https://x.com/0xname_foo"><img alt="X (formerly Twitter) Follow" src="https://img.shields.io/twitter/follow/0xname_foo?style=plastic&labelColor=%23AC80F3&color=%23000000"></a>
 
 ---
 
