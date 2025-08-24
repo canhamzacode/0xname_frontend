@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <link rel="canonical" href="https://app.0xname.foo/" />
         <link rel="icon" href="./public/favicon.ico" />
         <link rel="apple-touch-icon" href="./public/logo192.png" />
         <link rel="manifest" href="./public/manifest.json" />
@@ -9,7 +10,7 @@
         <meta name="theme-color" content="#AC80F3" />
         <meta
             name="description"
-            content="0xname.foo is a platform for web3 users to seamlessly create free personal names associated with various web3 communities and projects"
+            content="0xname.foo is a public good platform for web3 users to seamlessly create free personal web3 names associated with various web3 communities and projects"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,6 +24,16 @@
             async
             src="//gc.zgo.at/count.js"
         ></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V31NWQTEC9"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-V31NWQTEC9');
+        </script>
     </head>
     <body>
         <div id="root"></div>
