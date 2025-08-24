@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import logo from '../../images/logo_card_tb.png';
 import { ConnectButton } from '../connectKit/ConnectButton';
 import { Link } from 'react-router-dom';
+import AddSnapButton from '../addSnapButton/addSnapButton';
 
 const pagePaths = {
     '🗂️ COMMUNITY BASE': '/communitybase',
@@ -32,6 +33,7 @@ const Header = ({ pages }: { pages: (keyof typeof pagePaths)[] }) => (
                         </Nav.Item>
                     ))}
                 </Nav>
+                <AddSnapButton label="Download Snap" />
                 <ConnectButton />
             </Navbar.Collapse>
         </Container>
