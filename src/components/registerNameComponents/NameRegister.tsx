@@ -371,27 +371,6 @@ function NameRegister({ nameAtTLN }: { nameAtTLN: string }) {
                         tokenId={tokenId ? tokenId : undefined}
                     />
                 )}
-                {true && (
-                    <TxStatusModalWithTokenId
-                        show={true}
-                        onClose={closeModal}
-                        isPending={false}
-                        isTxError={false}
-                        errorCount={0}
-                        txError={undefined}
-                        isWriteError={false}
-                        writeError={undefined}
-                        isLoading={false}
-                        isSuccess={true} // ✅ Simulate success
-                        receipt={
-                            {
-                                transactionHash:
-                                    '0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef',
-                            } as any
-                        } // ✅ Mock transaction receipt
-                        tokenId={'12345'} // ✅ Fake tokenId
-                    />
-                )}
             </Form>
         </div>
     );
