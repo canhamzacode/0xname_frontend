@@ -192,7 +192,7 @@ function CommunityRegister({ searchValue }: { searchValue: string }) {
         navigate('/');
     };
 
-    const tos_url = 'https://drive.google.com/file/d/1nQ0Zrc218dltS4_VLLozjO6Scq_EofOB/view';
+    const tos_url = 'https://drive.google.com/file/d/1h7mA7CFQo_5tic6ZBKKgS5Vw6LDzMZJr';
     function handleConnectClick(event: React.MouseEvent) {
         event.preventDefault();
     }

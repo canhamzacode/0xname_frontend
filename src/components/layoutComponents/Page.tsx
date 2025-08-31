@@ -10,11 +10,15 @@ const PageContent: React.FunctionComponent<PageContentProps> = ({ children }) =>
         <div className="page-content">
             <div className="page-content-child">{children}</div>
 
-            <Alert className="bottom m-2" variant="danger" dismissible>
-                <b>0xNAME is in Beta</b> We are now in the active development stage, various errors and
-                bugs may occur!{' '}
-                <a href="https://discord.gg/McqF7vyCWx" target="_blank" rel="noreferrer">
-                    <b>Join our Discord</b>
+            <Alert className="bottom m-2" variant="info" dismissible>
+                <b>Newsletter is Here!</b> Subscribe to our newsletter to get Beast DAO latest
+                updates and news{' '}
+                <a
+                    href="https://beastcoopdao.substack.com/subscribe"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <b>👉 SUBSCRIBE </b>
                 </a>
             </Alert>
         </div>
