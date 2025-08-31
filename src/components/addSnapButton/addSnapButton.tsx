@@ -8,8 +8,8 @@ const AddSnapButton = ({ label = 'Use 0xNAME in MetaMask' }: { label?: string })
             target="_blank"
             className="snapBtn"
         >
-            <p>{label}</p>
             <img src="/fox.svg" alt="metamask svg" width={24} height={24} />
+            <p>{label}</p>
         </Link>
     );
 };
